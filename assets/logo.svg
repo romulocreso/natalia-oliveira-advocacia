@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" fill="none" aria-label="Monograma NO">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9cf97"/>
+      <stop offset="0.5" stop-color="#c9a24b"/>
+      <stop offset="1" stop-color="#9c7b34"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- N -->
+    <path d="M30 88 V40"/>
+    <path d="M30 40 L62 92"/>
+    <path d="M62 92 V44"/>
+    <!-- O -->
+    <circle cx="74" cy="58" r="26"/>
+    <!-- haste longa com estrela -->
+    <path d="M46 30 L46 118"/>
+  </g>
+  <!-- estrela / sparkle -->
+  <g stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round">
+    <path d="M46 110 L46 126"/>
+    <path d="M38 118 L54 118"/>
+    <path d="M41 113 L51 123"/>
+    <path d="M51 113 L41 123"/>
+  </g>
+</svg>

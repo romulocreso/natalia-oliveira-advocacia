@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natalia Oliveira Silva — Advocacia | Direito Civil e do Consumidor</title>
-  <meta name="description" content="Natalia Oliveira Silva, advogada (OAB/MG 179.585). Atuação especializada em Direito Civil e Direito do Consumidor com atendimento próximo, ético e dedicado." />
+  <title data-pt="Natalia Oliveira — Advocacia | Imigração para os EUA" data-en="Natalia Oliveira — Attorney at Law | U.S. Immigration">Natalia Oliveira — Advocacia | Imigração para os EUA</title>
+  <meta name="description" data-pt="Natalia Oliveira, advogada (OAB/MG 179.585), especialista em Imigração Estadunidense. Atendimento online no Brasil e nos Estados Unidos." data-en="Natalia Oliveira, attorney at law (OAB/MG 179.585), specialist in U.S. Immigration Law. Online services in Brazil and the United States." content="Natalia Oliveira, advogada (OAB/MG 179.585), especialista em Imigração Estadunidense. Atendimento online no Brasil e nos Estados Unidos." />
   <meta name="author" content="Natalia Oliveira Silva" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Natalia Oliveira Silva — Advocacia" />
-  <meta property="og:description" content="Advocacia em Direito Civil e Direito do Consumidor. Atendimento ético e personalizado." />
+  <meta property="og:title" content="Natalia Oliveira — Advocacia | Imigração para os EUA" />
+  <meta property="og:description" content="Especialista em Imigração Estadunidense. Direito com Propósito." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="assets/natalia.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,201 +24,182 @@
   <!-- ===== HEADER / NAV ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#inicio" class="brand" aria-label="Página inicial">
-        <span class="brand__mark">NOS</span>
+      <a href="#inicio" class="brand" aria-label="Natalia Oliveira — início">
+        <img src="assets/logo.svg" alt="" class="brand__logo" />
         <span class="brand__text">
-          <strong>Natalia Oliveira Silva</strong>
-          <small>Advocacia</small>
+          <strong>Natalia Oliveira</strong>
+          <small data-pt="Advocacia" data-en="Attorney at Law">Advocacia</small>
         </span>
       </a>
 
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#areas">Áreas de Atuação</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#inicio" data-pt="Início" data-en="Home">Início</a></li>
+          <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+          <li><a href="#areas" data-pt="Atuação" data-en="Practice">Atuação</a></li>
+          <li><a href="#processo" data-pt="Como funciona" data-en="How it works">Como funciona</a></li>
+          <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
         </ul>
       </nav>
 
-      <a href="#contato" class="btn btn--gold header__cta">Fale comigo</a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header__right">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang__btn is-active" data-lang="pt">PT</button>
+          <span class="lang__sep">|</span>
+          <button type="button" class="lang__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#contato" class="btn btn--gold header__cta" data-pt="Fale comigo" data-en="Get in touch">Fale comigo</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="inicio">
-    <div class="hero__overlay"></div>
+    <div class="hero__bg"></div>
     <div class="container hero__content">
-      <p class="hero__eyebrow">OAB/MG 179.585</p>
-      <h1 class="hero__title">Natalia Oliveira Silva</h1>
-      <p class="hero__subtitle">
-        Advocacia especializada em <strong>Direito Civil</strong> e
-        <strong>Direito do Consumidor</strong>
-      </p>
-      <p class="hero__lead">
-        Defesa técnica, ética e personalizada para proteger seus direitos com
-        a atenção e a transparência que cada caso merece.
-      </p>
+      <p class="hero__eyebrow">OAB/MG 179.585 · <span data-pt="Atendimento Brasil &amp; EUA" data-en="Brazil &amp; U.S. Services">Atendimento Brasil &amp; EUA</span></p>
+      <h1 class="hero__title">Natalia Oliveira</h1>
+      <p class="hero__role" data-pt="Advogada · Mediadora e Conciliadora" data-en="Attorney at Law · Mediator and Conciliator">Advogada · Mediadora e Conciliadora</p>
+      <p class="hero__subtitle" data-pt="Especialista em Imigração Estadunidense" data-en="Specialist in U.S. Immigration Law">Especialista em Imigração Estadunidense</p>
+      <p class="hero__slogan" data-pt="“Direito com Propósito.”" data-en="“Law with Purpose.”">“Direito com Propósito.”</p>
       <div class="hero__actions">
-        <a href="#contato" class="btn btn--gold">Agende uma conversa</a>
-        <a href="#areas" class="btn btn--ghost">Conheça as áreas</a>
+        <a href="#contato" class="btn btn--gold" data-pt="Agende uma consulta" data-en="Book a consultation">Agende uma consulta</a>
+        <a href="#areas" class="btn btn--ghost" data-pt="Como posso ajudar" data-en="How I can help">Como posso ajudar</a>
       </div>
     </div>
-    <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
-      <span></span>
-    </a>
+    <a href="#sobre" class="hero__scroll" aria-label="Scroll"><span></span></a>
   </section>
 
   <!-- ===== SOBRE ===== -->
   <section class="section sobre" id="sobre">
     <div class="container sobre__grid">
       <div class="sobre__media reveal">
-        <div class="sobre__photo" aria-hidden="true">
-          <!-- Substitua por uma foto profissional: troque o conteúdo por <img src="assets/natalia.jpg" alt="Natalia Oliveira Silva"> -->
-          <span>Foto profissional</span>
+        <div class="sobre__photo">
+          <img src="assets/natalia.jpg" alt="Natalia Oliveira, advogada" loading="lazy" />
         </div>
       </div>
       <div class="sobre__text reveal">
-        <p class="section__eyebrow">Sobre</p>
-        <h2 class="section__title">Comprometimento com cada cliente</h2>
-        <p>
-          Sou <strong>Natalia Oliveira Silva</strong>, advogada inscrita na
-          OAB/MG sob o nº 179.585, dedicada a oferecer um atendimento jurídico
-          próximo, claro e estratégico. Acredito que cada cliente merece ser
-          ouvido com atenção e orientado de forma transparente em todas as
-          etapas do processo.
-        </p>
-        <p>
-          Atuo com foco em <strong>Direito Civil</strong> e
-          <strong>Direito do Consumidor</strong>, buscando sempre a solução mais
-          adequada — seja pela via consensual ou judicial — para garantir a
-          proteção dos seus direitos e interesses.
-        </p>
+        <p class="section__eyebrow" data-pt="Sobre" data-en="About">Sobre</p>
+        <h2 class="section__title" data-pt="Sua ponte jurídica entre o Brasil e os EUA" data-en="Your legal bridge between Brazil and the U.S.">Sua ponte jurídica entre o Brasil e os EUA</h2>
+        <p data-pt="Sou <strong>Natalia Oliveira</strong>, advogada inscrita na OAB/MG sob o nº 179.585, mediadora e conciliadora, dedicada a orientar pessoas e famílias que desejam viver, estudar, trabalhar ou investir nos Estados Unidos." data-en="I am <strong>Natalia Oliveira</strong>, an attorney registered with the OAB/MG under nº 179.585, mediator and conciliator, dedicated to guiding individuals and families who wish to live, study, work or invest in the United States.">Sou <strong>Natalia Oliveira</strong>, advogada inscrita na OAB/MG sob o nº 179.585, mediadora e conciliadora, dedicada a orientar pessoas e famílias que desejam viver, estudar, trabalhar ou investir nos Estados Unidos.</p>
+        <p data-pt="Meu trabalho é especializado em <strong>Imigração Estadunidense</strong>, com atendimento online no Brasil e nos Estados Unidos. Atuo com clareza, ética e estratégia, traduzindo um processo complexo em passos simples e seguros." data-en="My practice is focused on <strong>U.S. Immigration Law</strong>, with online services in Brazil and the United States. I work with clarity, ethics and strategy, turning a complex process into simple and secure steps.">Meu trabalho é especializado em <strong>Imigração Estadunidense</strong>, com atendimento online no Brasil e nos Estados Unidos. Atuo com clareza, ética e estratégia, traduzindo um processo complexo em passos simples e seguros.</p>
         <ul class="sobre__list">
-          <li>Atendimento humanizado e personalizado</li>
-          <li>Comunicação clara, sem juridiquês desnecessário</li>
-          <li>Ética e transparência em primeiro lugar</li>
+          <li data-pt="Atendimento online no Brasil e nos EUA" data-en="Online services in Brazil and the U.S.">Atendimento online no Brasil e nos EUA</li>
+          <li data-pt="Comunicação clara em português e inglês" data-en="Clear communication in Portuguese and English">Comunicação clara em português e inglês</li>
+          <li data-pt="Acompanhamento dedicado em cada etapa" data-en="Dedicated support at every stage">Acompanhamento dedicado em cada etapa</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- ===== ÁREAS DE ATUAÇÃO ===== -->
+  <!-- ===== ÁREAS / SERVIÇOS ===== -->
   <section class="section areas" id="areas">
     <div class="container">
       <div class="section__head reveal">
-        <p class="section__eyebrow">Áreas de Atuação</p>
-        <h2 class="section__title">Como posso te ajudar</h2>
-        <p class="section__intro">
-          Atuação especializada para oferecer segurança jurídica e a melhor
-          estratégia para o seu caso.
-        </p>
+        <p class="section__eyebrow section__eyebrow--center" data-pt="Atuação" data-en="Practice Areas">Atuação</p>
+        <h2 class="section__title" data-pt="Imigração para os Estados Unidos" data-en="U.S. Immigration Services">Imigração para os Estados Unidos</h2>
+        <p class="section__intro" data-pt="Orientação especializada para cada perfil — do visto à residência permanente." data-en="Specialized guidance for every profile — from visas to permanent residence.">Orientação especializada para cada perfil — do visto à residência permanente.</p>
       </div>
 
       <div class="areas__grid">
         <article class="card reveal">
-          <div class="card__icon" aria-hidden="true">⚖️</div>
-          <h3 class="card__title">Direito Civil</h3>
-          <p>
-            Contratos, responsabilidade civil, indenizações, questões de
-            família e patrimoniais, cobranças e resolução de conflitos entre
-            particulares.
-          </p>
-          <ul class="card__list">
-            <li>Contratos e revisões contratuais</li>
-            <li>Ações de indenização e danos morais</li>
-            <li>Cobranças e inadimplemento</li>
-            <li>Responsabilidade civil</li>
-          </ul>
+          <div class="card__icon">✈️</div>
+          <h3 class="card__title" data-pt="Vistos de Não-Imigrante" data-en="Non-Immigrant Visas">Vistos de Não-Imigrante</h3>
+          <p data-pt="Vistos de turismo, estudo, intercâmbio e trabalho temporário, com orientação completa sobre requisitos e documentação." data-en="Tourism, study, exchange and temporary work visas, with full guidance on requirements and documentation.">Vistos de turismo, estudo, intercâmbio e trabalho temporário, com orientação completa sobre requisitos e documentação.</p>
         </article>
 
         <article class="card reveal">
-          <div class="card__icon" aria-hidden="true">🛡️</div>
-          <h3 class="card__title">Direito do Consumidor</h3>
-          <p>
-            Defesa dos seus direitos nas relações de consumo, contra práticas
-            abusivas, cobranças indevidas e descumprimento de contratos por
-            empresas.
-          </p>
-          <ul class="card__list">
-            <li>Cobranças e dívidas indevidas</li>
-            <li>Negativação irregular do nome</li>
-            <li>Produtos e serviços com defeito</li>
-            <li>Práticas abusivas e publicidade enganosa</li>
-          </ul>
+          <div class="card__icon">🏛️</div>
+          <h3 class="card__title" data-pt="Vistos de Imigrante &amp; Green Card" data-en="Immigrant Visas &amp; Green Card">Vistos de Imigrante &amp; Green Card</h3>
+          <p data-pt="Residência permanente por trabalho, investimento ou patrocínio, com planejamento estratégico do caso." data-en="Permanent residence through work, investment or sponsorship, with strategic case planning.">Residência permanente por trabalho, investimento ou patrocínio, com planejamento estratégico do caso.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">👨‍👩‍👧</div>
+          <h3 class="card__title" data-pt="Reunificação Familiar" data-en="Family Reunification">Reunificação Familiar</h3>
+          <p data-pt="Petições familiares para reunir cônjuges, filhos e parentes, com acompanhamento humano e atento." data-en="Family petitions to reunite spouses, children and relatives, with caring and attentive support.">Petições familiares para reunir cônjuges, filhos e parentes, com acompanhamento humano e atento.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🎓</div>
+          <h3 class="card__title" data-pt="Estudo &amp; Trabalho" data-en="Study &amp; Work">Estudo &amp; Trabalho</h3>
+          <p data-pt="Caminhos para estudantes e profissionais, incluindo vistos de trabalho e oportunidades de carreira nos EUA." data-en="Pathways for students and professionals, including work visas and career opportunities in the U.S.">Caminhos para estudantes e profissionais, incluindo vistos de trabalho e oportunidades de carreira nos EUA.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🛂</div>
+          <h3 class="card__title" data-pt="Cidadania &amp; Naturalização" data-en="Citizenship &amp; Naturalization">Cidadania &amp; Naturalização</h3>
+          <p data-pt="Orientação para o processo de naturalização e obtenção da cidadania americana." data-en="Guidance through the naturalization process and obtaining U.S. citizenship.">Orientação para o processo de naturalização e obtenção da cidadania americana.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🤝</div>
+          <h3 class="card__title" data-pt="Mediação &amp; Conciliação" data-en="Mediation &amp; Conciliation">Mediação &amp; Conciliação</h3>
+          <p data-pt="Como mediadora e conciliadora, ajudo a resolver conflitos de forma dialogada, rápida e menos desgastante." data-en="As a mediator and conciliator, I help resolve conflicts through dialogue — faster and with less wear.">Como mediadora e conciliadora, ajudo a resolver conflitos de forma dialogada, rápida e menos desgastante.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== DIFERENCIAIS ===== -->
-  <section class="section diferenciais" id="diferenciais">
+  <!-- ===== PROCESSO ===== -->
+  <section class="section processo" id="processo">
     <div class="container">
       <div class="section__head reveal">
-        <p class="section__eyebrow">Diferenciais</p>
-        <h2 class="section__title">Por que contar comigo</h2>
+        <p class="section__eyebrow section__eyebrow--center" data-pt="Como funciona" data-en="How it works">Como funciona</p>
+        <h2 class="section__title" data-pt="Um processo simples e transparente" data-en="A simple and transparent process">Um processo simples e transparente</h2>
       </div>
-
       <div class="dif__grid">
         <div class="dif reveal">
           <span class="dif__num">01</span>
-          <h3>Atendimento próximo</h3>
-          <p>Acompanhamento direto e disponível, do primeiro contato à conclusão do caso.</p>
+          <h3 data-pt="Conversa inicial" data-en="Initial conversation">Conversa inicial</h3>
+          <p data-pt="Entendemos o seu objetivo e o seu perfil em uma consulta online." data-en="We understand your goal and profile in an online consultation.">Entendemos o seu objetivo e o seu perfil em uma consulta online.</p>
         </div>
         <div class="dif reveal">
           <span class="dif__num">02</span>
-          <h3>Transparência total</h3>
-          <p>Você entende cada etapa, prazo e possibilidade — sem surpresas.</p>
+          <h3 data-pt="Análise do caso" data-en="Case analysis">Análise do caso</h3>
+          <p data-pt="Avaliamos as melhores opções de visto e o caminho mais seguro." data-en="We assess the best visa options and the safest path.">Avaliamos as melhores opções de visto e o caminho mais seguro.</p>
         </div>
         <div class="dif reveal">
           <span class="dif__num">03</span>
-          <h3>Estratégia personalizada</h3>
-          <p>Cada caso é analisado de forma individual para a melhor solução possível.</p>
+          <h3 data-pt="Estratégia &amp; documentos" data-en="Strategy &amp; documents">Estratégia &amp; documentos</h3>
+          <p data-pt="Montamos a documentação e a estratégia personalizada do seu processo." data-en="We prepare the documentation and a personalized strategy for your case.">Montamos a documentação e a estratégia personalizada do seu processo.</p>
         </div>
         <div class="dif reveal">
           <span class="dif__num">04</span>
-          <h3>Ética e seriedade</h3>
-          <p>Compromisso com a verdade, a confidencialidade e os melhores interesses do cliente.</p>
+          <h3 data-pt="Acompanhamento" data-en="Follow-up">Acompanhamento</h3>
+          <p data-pt="Você é acompanhado de perto até a conclusão, com total transparência." data-en="You are closely supported until completion, with full transparency.">Você é acompanhado de perto até a conclusão, com total transparência.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA / CONTATO ===== -->
+  <!-- ===== CONTATO ===== -->
   <section class="section contato" id="contato">
     <div class="container contato__inner reveal">
-      <p class="section__eyebrow section__eyebrow--center">Contato</p>
-      <h2 class="section__title">Vamos conversar sobre o seu caso</h2>
-      <p class="contato__lead">
-        Entre em contato para uma análise inicial. Será um prazer entender a sua
-        situação e orientar os próximos passos.
-      </p>
+      <p class="section__eyebrow section__eyebrow--center" data-pt="Contato" data-en="Contact">Contato</p>
+      <h2 class="section__title" data-pt="Vamos planejar o seu futuro nos EUA" data-en="Let’s plan your future in the U.S.">Vamos planejar o seu futuro nos EUA</h2>
+      <p class="contato__lead" data-pt="Agende uma consulta online. Será um prazer entender o seu objetivo e indicar o melhor caminho." data-en="Book an online consultation. It will be a pleasure to understand your goal and guide the best path.">Agende uma consulta online. Será um prazer entender o seu objetivo e indicar o melhor caminho.</p>
 
       <div class="contato__actions">
-        <a href="https://www.instagram.com/natalia.oliveiras/" target="_blank" rel="noopener" class="btn btn--gold btn--lg">
-          Falar pelo Instagram
-        </a>
-        <!-- Quando tiver, adicione WhatsApp/e-mail aqui:
-        <a href="https://wa.me/55SEUNUMERO" class="btn btn--ghost btn--lg">WhatsApp</a>
-        <a href="mailto:seu@email.com" class="btn btn--ghost btn--lg">E-mail</a>
-        -->
+        <a href="https://wa.me/5511950341427" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-pt="WhatsApp" data-en="WhatsApp">WhatsApp</a>
+        <a href="mailto:nataliaos.adv@outlook.com" class="btn btn--ghost btn--lg" data-pt="Enviar e-mail" data-en="Send e-mail">Enviar e-mail</a>
       </div>
 
       <div class="contato__info">
-        <a href="https://www.instagram.com/natalia.oliveiras/" target="_blank" rel="noopener" class="contato__item">
-          <span class="contato__icon">📷</span>
-          <span>@natalia.oliveiras</span>
+        <a href="https://wa.me/5511950341427" target="_blank" rel="noopener" class="contato__item">
+          <span class="contato__icon">📱</span><span>+55 (11) 95034-1427</span>
         </a>
-        <span class="contato__item">
-          <span class="contato__icon">⚖️</span>
-          <span>OAB/MG 179.585</span>
-        </span>
+        <a href="mailto:nataliaos.adv@outlook.com" class="contato__item">
+          <span class="contato__icon">✉️</span><span>nataliaos.adv@outlook.com</span>
+        </a>
+        <a href="https://www.instagram.com/natalia.oliveiras/" target="_blank" rel="noopener" class="contato__item">
+          <span class="contato__icon">📷</span><span>@natalia.oliveiras</span>
+        </a>
       </div>
+      <p class="contato__note" data-pt="Atendimento online · Brasil &amp; Estados Unidos" data-en="Online services · Brazil &amp; United States">Atendimento online · Brasil &amp; Estados Unidos</p>
     </div>
   </section>
 
@@ -226,39 +207,32 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="brand__mark brand__mark--sm">NOS</span>
+        <img src="assets/logo.svg" alt="" class="brand__logo brand__logo--sm" />
         <div>
-          <strong>Natalia Oliveira Silva</strong><br />
-          <small>Advocacia · OAB/MG 179.585</small>
+          <strong>Natalia Oliveira</strong><br />
+          <small data-pt="Advocacia · OAB/MG 179.585" data-en="Attorney at Law · OAB/MG 179.585">Advocacia · OAB/MG 179.585</small>
         </div>
       </div>
-
       <nav class="footer__nav">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#areas">Áreas</a>
-        <a href="#contato">Contato</a>
+        <a href="#inicio" data-pt="Início" data-en="Home">Início</a>
+        <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+        <a href="#areas" data-pt="Atuação" data-en="Practice">Atuação</a>
+        <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
       </nav>
-
       <div class="footer__social">
-        <a href="https://www.instagram.com/natalia.oliveiras/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://www.instagram.com/natalia.oliveiras/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>© <span id="year"></span> Natalia Oliveira Silva — Todos os direitos reservados.</p>
-        <p class="footer__oab">
-          Conteúdo de caráter meramente informativo, em conformidade com o
-          Código de Ética e Disciplina da OAB e o Provimento nº 205/2021.
-        </p>
+        <p class="footer__slogan" data-pt="“Direito com Propósito.”" data-en="“Law with Purpose.”">“Direito com Propósito.”</p>
+        <p>© <span id="year"></span> Natalia Oliveira Silva — <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+        <p class="footer__oab" data-pt="Conteúdo meramente informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021." data-en="Informational content only, in compliance with the OAB Code of Ethics and Discipline and Provision nº 205/2021.">Conteúdo meramente informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Botão flutuante Instagram -->
-  <a href="https://www.instagram.com/natalia.oliveiras/" target="_blank" rel="noopener" class="float-btn" aria-label="Instagram">
-    <span>📷</span>
-  </a>
+  <a href="https://wa.me/5511950341427" target="_blank" rel="noopener" class="float-btn" aria-label="WhatsApp"><span>📱</span></a>
 
   <script src="script.js"></script>
 </body>

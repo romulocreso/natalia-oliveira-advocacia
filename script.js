@@ -1,5 +1,5 @@
 /* ===================================================
-   Natalia Oliveira Silva — Advocacia | interações
+   Natalia Oliveira — Advocacia | interações + i18n
 =================================================== */
 (function () {
   "use strict";
@@ -8,33 +8,75 @@
   const navToggle = document.getElementById("navToggle");
   const nav = document.getElementById("nav");
 
-  /* Header com fundo ao rolar */
+  /* ---- Header com fundo ao rolar ---- */
   const onScroll = () => {
-    if (window.scrollY > 40) header.classList.add("scrolled");
-    else header.classList.remove("scrolled");
+    header.classList.toggle("scrolled", window.scrollY > 40);
   };
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* Menu mobile */
+  /* ---- Menu mobile ---- */
+  const closeMenu = () => {
+    nav.classList.remove("open");
+    navToggle.classList.remove("active");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  };
   navToggle.addEventListener("click", () => {
     const open = nav.classList.toggle("open");
     navToggle.classList.toggle("active", open);
     navToggle.setAttribute("aria-expanded", open ? "true" : "false");
     document.body.style.overflow = open ? "hidden" : "";
   });
+  nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 
-  /* Fecha o menu ao clicar em um link */
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      navToggle.classList.remove("active");
-      navToggle.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
+  /* ---- Tradução PT / EN ---- */
+  const STORAGE_KEY = "no-lang";
+  const langButtons = document.querySelectorAll(".lang__btn");
+
+  function applyLang(lang) {
+    if (lang !== "pt" && lang !== "en") lang = "pt";
+
+    // Conteúdo de texto (elementos com data-pt / data-en)
+    document.querySelectorAll("[data-pt][data-en]").forEach((el) => {
+      const value = el.getAttribute("data-" + lang);
+      if (value === null) return;
+      if (el.tagName === "TITLE") {
+        el.textContent = value;
+      } else if (el.tagName === "META") {
+        el.setAttribute("content", value);
+      } else {
+        el.innerHTML = value;
+      }
     });
+
+    // Atributo lang do documento
+    document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
+
+    // Estado dos botões
+    langButtons.forEach((btn) => {
+      const active = btn.getAttribute("data-lang") === lang;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+  }
+
+  langButtons.forEach((btn) => {
+    btn.addEventListener("click", () => applyLang(btn.getAttribute("data-lang")));
   });
 
-  /* Reveal on scroll */
+  // Idioma inicial: salvo > navegador > PT
+  let initial = "pt";
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) initial = saved;
+    else if (navigator.language && navigator.language.toLowerCase().startsWith("en")) initial = "en";
+  } catch (e) {}
+  applyLang(initial);
+
+  /* ---- Reveal on scroll ---- */
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
@@ -53,7 +95,7 @@
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* Ano atual no rodapé */
+  /* ---- Ano no rodapé ---- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
