@@ -272,7 +272,7 @@ a.contato__item:hover { border-color: var(--gold); color: var(--cream); transfor
 .footer__bottom { border-top: 1px solid rgba(201, 162, 75, 0.1); padding: 24px 0; font-size: 0.78rem; text-align: center; color: rgba(165, 156, 139, 0.7); }
 .footer__bottom p { margin: 4px 0; overflow-wrap: break-word; }
 .footer__slogan { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--gold-soft); margin-bottom: 10px !important; }
-.footer__oab { max-width: 720px; margin: 8px auto 0; font-size: 0.72rem; }
+.footer__bottom .footer__oab { max-width: 720px; margin: 8px auto 0; font-size: 0.72rem; }
 
 /* ===== Botão flutuante (WhatsApp) ===== */
 .float-btn {
