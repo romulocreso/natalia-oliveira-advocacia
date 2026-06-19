@@ -270,7 +270,7 @@ a.contato__item:hover { border-color: var(--gold); color: var(--cream); transfor
 .footer__social a { color: var(--gold); font-size: 0.84rem; letter-spacing: 0.05em; border-bottom: 1px solid transparent; transition: var(--transition); }
 .footer__social a:hover { border-color: var(--gold); }
 .footer__bottom { border-top: 1px solid rgba(201, 162, 75, 0.1); padding: 24px 0; font-size: 0.78rem; text-align: center; color: rgba(165, 156, 139, 0.7); }
-.footer__bottom p { margin: 4px 0; }
+.footer__bottom p { margin: 4px 0; overflow-wrap: break-word; }
 .footer__slogan { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--gold-soft); margin-bottom: 10px !important; }
 .footer__oab { max-width: 720px; margin: 8px auto 0; font-size: 0.72rem; }
 
@@ -323,6 +323,10 @@ a.contato__item:hover { border-color: var(--gold); color: var(--cream); transfor
   .areas__grid, .dif__grid { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; }
+  .footer__bottom { font-size: 0.74rem; line-height: 1.6; }
+  .footer__bottom p { max-width: 300px; margin-left: auto; margin-right: auto; }
+  .footer__slogan { font-size: 0.98rem !important; }
+  .footer__oab { font-size: 0.68rem; max-width: 300px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
